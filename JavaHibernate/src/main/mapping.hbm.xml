@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="main.Zaposleni" table="zaposleni">
+        <meta attribute="class-description">
+            This class contains the zaposleni details 
+        </meta>
+        <id name="id" type="int" column="zaposleni_id">
+            <generator class="increment"/>
+        </id>
+        <property name="ime" column="ime" type="string"/>
+        <property name="godine" column="godine" type="int"/>
+        <property name="adresa" column="adresa" type="string"/>
+        <property name="zarada" column="zarada" type="string"/>
+    </class>
+</hibernate-mapping>
+
